@@ -1,0 +1,24 @@
+{
+  "name": "rest-auth",
+  "version": "1.0.0",
+  "description": "OKR node rest auth app",
+  "scripts": {
+    "prod": "node ./start.js",
+    "watch": "nodemon ./start.js",
+    "start": "concurrently \"npm run watch\" --names \"💻\" --prefix name"
+  },
+  "author": "Yaroslav Kuzyo",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.5"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.11"
+  }
+}
